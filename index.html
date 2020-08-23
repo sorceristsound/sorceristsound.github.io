@@ -1,1 +1,106 @@
-boop
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Sorcerist</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" href="icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<!-- TO DO
+background responsive
+menu responsive -->
+
+	<style>
+		html,
+		body {
+			height: 100%;
+			width: 100%;
+		}
+
+		body {
+			position: relative;
+			background-color: #000000;
+
+		}
+
+		/* background */
+		.page-bg {
+			opacity: 0;
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: url(bg.png) no-repeat center center fixed;
+			background-size: cover;
+
+			/*fade*/
+			animation-name: fadeIn;
+			animation-iteration-count: 1;
+			animation-timing-function: ease-in-out;
+			animation-duration: 6s;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+
+		/* remove bullet*/
+		ul {
+			list-style-type: none;
+		}
+
+		/* font awsome icons */
+		.fa {
+			padding: 20px;
+			font-size: 30px;
+			width: 50px;
+			text-align: center;
+			text-decoration: none;
+			color: white;
+		}
+
+		/* Add a hover effect if you want */
+		.fa:hover {
+			opacity: 0.7;
+
+		}
+
+		/* Top left text */
+		.top-left {
+			position: absolute;
+			top: 8px;
+			left: 16px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="page-bg">
+		<div class="top-left">
+			<ul class="icons">
+				<li><a href="https://www.soundcloud.com/sorcerist/" class="fa fa-soundcloud"></a></li>
+				<li><a href="https://www.instagram.com/sorcerist/" class="fa fa-instagram"></a></li>
+				<li><a href="https://www.facebook.com/sorcerist/" class="fa fa-facebook"></a></li>
+				<li><a href="https://twitter.com/sorceristsound/" class="fa fa-twitter"></a></li>
+				<li><a href="mailto:sorceristsound@gmail.com" class="fa fa-envelope"></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>
