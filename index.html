@@ -34,8 +34,9 @@ menu responsive -->
 			left: 0;
 			height: 100%;
 			width: 100%;
-			background: url(bg.png) no-repeat center center fixed;
-			background-size: cover;
+			background: url(icon.png) no-repeat center center fixed;
+			background-size: contain; 		/* responsive */
+
 
 			/*fade*/
 			animation-name: fadeIn;
@@ -57,7 +58,7 @@ menu responsive -->
 
 		/*responsive background*/
 
-		@media (max-width: 480px) {
+		/* @media (max-width: 480px) {
 			.page-bg {
 				background-image: url(small.png);
 			}
@@ -67,7 +68,16 @@ menu responsive -->
 			.page-bg {
 				background-image: url(med.png);
 			}
-		}
+		} */
+/* 
+		@media (max-width: 600) {
+			.page-bg {
+				background-image: url(icon.png);
+				background-position: center;
+				background-attachment: fixed;
+				width: 100%;
+			}
+		} */
 
 
 		/* remove bullet*/
@@ -97,23 +107,89 @@ menu responsive -->
 			top: 8px;
 			left: 16px;
 		}
+
+
+/*nav responsive*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: grey;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
 	</style>
 
 </head>
 
 <body>
 
+
+
+
+	  
+
+
+
 	<div class="page-bg">
-		<div class="top-left">
-			<ul class="icons">
-				<li><a href="https://www.soundcloud.com/sorcerist/" class="fa fa-soundcloud"></a></li>
-				<li><a href="https://www.instagram.com/sorcerist/" class="fa fa-instagram"></a></li>
-				<li><a href="https://www.facebook.com/sorcerist/" class="fa fa-facebook"></a></li>
-				<li><a href="https://twitter.com/sorceristsound/" class="fa fa-twitter"></a></li>
-				<li><a href="mailto:sorceristsound@gmail.com" class="fa fa-envelope"></a></li>
-			</ul>
-		</div>
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="https://www.soundcloud.com/sorcerist/" class="fa fa-soundcloud"></a>
+			<a href="https://www.instagram.com/sorcerist/" class="fa fa-instagram"></a>
+			<a href="https://www.facebook.com/sorcerist/" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/sorceristsound/" class="fa fa-twitter"></a>
+			<a href="mailto:sorceristsound@gmail.com" class="fa fa-envelope"></a>
+		  </div>
+		</br>
+		  <span style="font-size:30px;cursor:pointer;color:white;padding-left:4%;" onclick="openNav()">&#9776;</span>
 	</div>
+
+	<script>
+		function openNav() {
+		  document.getElementById("mySidenav").style.width = "250px";
+		}
+		
+		function closeNav() {
+		  document.getElementById("mySidenav").style.width = "0";
+		}
+		</script>
+
 </body>
 
 </html>
