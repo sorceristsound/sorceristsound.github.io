@@ -11,7 +11,6 @@
 
 
 	<!-- TO DO
-background responsive
 menu responsive -->
 
 	<style>
@@ -53,6 +52,20 @@ menu responsive -->
 
 			100% {
 				opacity: 1;
+			}
+		}
+
+		/*responsive background*/
+
+		@media (max-width: 480px) {
+			.page-bg {
+				background-image: url(small.png);
+			}
+		}
+
+		@media (min-width: 481px) and (max-width: 1024px) {
+			.page-bg {
+				background-image: url(med.png);
 			}
 		}
 
