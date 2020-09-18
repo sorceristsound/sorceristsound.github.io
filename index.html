@@ -20,8 +20,8 @@
 			height: 100%;
 			width: 100%;
 			font-family: din-condensed, sans-serif;
-font-weight: 400;
-font-style: normal;
+			font-weight: 400;
+			font-style: normal;
 		}
 
 		body {
@@ -39,7 +39,8 @@ font-style: normal;
 			height: 100%;
 			width: 100%;
 			background: url(icon.PNG) no-repeat center center fixed;
-			background-size: contain; 		/* responsive */
+			background-size: contain;
+			/* responsive */
 
 
 			/*fade*/
@@ -68,13 +69,13 @@ font-style: normal;
 
 		/* font awsome icons */
 		.fa {
-    padding: 6px 10px 10px 2px;
-    font-size: 26px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-}
+			padding: 6px 10px 10px 2px;
+			font-size: 26px;
+			width: 50px;
+			text-align: center;
+			text-decoration: none;
+			color: white;
+		}
 
 		/* Add a hover effect if you want */
 		.fa:hover {
@@ -90,101 +91,129 @@ font-style: normal;
 		}
 
 
-/*nav responsive*/
+		/*nav responsive*/
 
-.sidenav {
-  height: 100%;
-  width:0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  align-items: center;
-
-
-}
-
-.sidenav a {
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #008CBA;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+		.sidenav {
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			transition: 0.5s;
+			padding-top: 60px;
+			align-items: center;
 
 
-#mc_embed_signup{background:#111; clear:left;  width:600px; padding-left:12%; padding-top:10%;}
+		}
 
-.button {
-  border: none;
-  color: grey;
-  padding: 8px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: din-condensed, sans-serif;
-  font-size: 20px;
-  margin: 4px 2px;
-  transition-duration: 0.2s;
-  cursor: pointer;
-	border-radius: 4px;
-  background-color: #008CBA;
-  color: white;
-   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		.sidenav a {
+			text-decoration: none;
+			font-size: 20px;
+			color: white;
+			display: block;
+			transition: 0.3s;
+		}
 
-}
+		.sidenav a:hover {
+			color: #008CBA;
+		}
 
-.button:hover {
-  background-color: black;
-  color: white;
-  border: 2px solid #008CBA;
-}
+		.sidenav .closebtn {
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+		}
 
-.gumroad-button {
-    background-color: white !important;
-    background-image: url(https://gumroad.com/button/button_bar.jpg) !important;
-    background-repeat: repeat-x !important;
-    border-radius: 4px !important;
-    box-shadow: rgba(0, 0, 0, 0.4) 0 0 2px !important;
-    color: #008CBA !important;
-    display: inline-block !important;
-    font-style: normal !important;
-    font-weight: 500 !important;
-    line-height: 50px !important;
-    padding: 0 15px !important;
-    text-shadow: none !important;
-    text-decoration: none !important;
-}
+		@media screen and (max-height: 450px) {
+			.sidenav {
+				padding-top: 15px;
+			}
 
-.gumroad-button:hover {
-  color: white;
-  border: 2px solid #008CBA;
-}
-
-#gbutton{ padding-left:19%; padding-bottom:12%;}
+			.sidenav a {
+				font-size: 18px;
+			}
+		}
 
 
+		#mc_embed_signup {
+			background: #111;
+			clear: left;
+			width: 600px;
+			padding-left: 12%;
+			padding-top: 10%;
+		}
+
+		.button {
+			border: none;
+			color: grey;
+			padding: 8px 16px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-family: din-condensed, sans-serif;
+			font-size: 20px;
+			margin: 4px 2px;
+			transition-duration: 0.2s;
+			cursor: pointer;
+			border-radius: 4px;
+			background-color: #008CBA;
+			color: white;
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+		}
+
+		.button:hover {
+			background-color: black;
+			color: white;
+			border: 2px solid #008CBA;
+		}
+
+		.gumroad-button {
+			background-color: white !important;
+			background-image: url(https://gumroad.com/button/button_bar.jpg) !important;
+			background-repeat: repeat-x !important;
+			border-radius: 4px !important;
+			box-shadow: rgba(0, 0, 0, 0.4) 0 0 2px !important;
+			color: #008CBA !important;
+			display: inline-block !important;
+			font-style: normal !important;
+			font-weight: 500 !important;
+			line-height: 50px !important;
+			padding: 0 15px !important;
+			text-shadow: none !important;
+			text-decoration: none !important;
+		}
+
+		.gumroad-button:hover {
+			color: white;
+			border: 2px solid #008CBA;
+		}
+
+		#gbutton {
+			padding-left: 19%;
+			padding-bottom: 12%;
+		}
+
+		#spotify {
+			padding-left: 100%;
+			padding-top: 100%;
+			opacity: 0;
+
+			/*fade*/
+			animation-name: fadeIn;
+			animation-iteration-count: 1;
+			animation-timing-function: ease-in-out;
+			animation-duration: 6s;
+			animation-fill-mode: forwards;
+		}
+
+
+		
 	</style>
 
 </head>
@@ -194,9 +223,12 @@ font-style: normal;
 
 
 
-	  
 
 
+	<div id="spotify">
+		<iframe src="https://open.spotify.com/embed/album/733ng9VWuday1SbN8BhMot" width="300" height="380"
+			frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	</div>
 
 	<div class="page-bg">
 
@@ -207,47 +239,56 @@ font-style: normal;
 			</div>
 			<ul>
 
-			<a href="https://open.spotify.com/album/733ng9VWuday1SbN8BhMot?si=fQB24iFhS6Ce0-KmQXZhVw"><i class="fa fa-spotify"></i>SPOTIFY</a>
-			<a href="https://www.soundcloud.com/sorcerist/"><i class="fa fa-soundcloud"href="https://www.soundcloud.com/sorcerist/"></i>SOUNDCLOUD</a>
-			<a href="https://www.instagram.com/sorcerist/"><i class="fa fa-instagram"></i>INSTAGRAM</a>
-			<a href="https://www.facebook.com/sorcerist/"><i class="fa fa-facebook"></i>FACEBOOK</a>
-			<a href="https://twitter.com/sorceristsound/"><i class="fa fa-twitter"></i>TWITTER</a>
-			<a href="mailto:sorceristsound@gmail.com"><i class="fa fa-envelope"></i>CONTACT</a>
-		<a href="https://www.etsy.com/shop/Sorcerist"><i class="fa fa-shopping-bag"></i>SHOP</a>
-		<!-- <a href="https://gumroad.com/sorcerist"><i class="fa fa-music"></i>BUY MY ALBUM&nbsp;&hearts;</a> -->
-</ul>
+				<a href="https://open.spotify.com/album/733ng9VWuday1SbN8BhMot?si=fQB24iFhS6Ce0-KmQXZhVw"><i
+						class="fa fa-spotify"></i>SPOTIFY</a>
+				<a href="https://www.soundcloud.com/sorcerist/"><i class="fa fa-soundcloud"
+						href="https://www.soundcloud.com/sorcerist/"></i>SOUNDCLOUD</a>
+				<a href="https://www.instagram.com/sorcerist/"><i class="fa fa-instagram"></i>INSTAGRAM</a>
+				<a href="https://www.facebook.com/sorcerist/"><i class="fa fa-facebook"></i>FACEBOOK</a>
+				<a href="https://twitter.com/sorceristsound/"><i class="fa fa-twitter"></i>TWITTER</a>
+				<a href="mailto:sorceristsound@gmail.com"><i class="fa fa-envelope"></i>CONTACT</a>
+				<a href="https://www.etsy.com/shop/Sorcerist"><i class="fa fa-shopping-bag"></i>SHOP</a>
+				<!-- <a href="https://gumroad.com/sorcerist"><i class="fa fa-music"></i>BUY MY ALBUM&nbsp;&hearts;</a> -->
+			</ul>
 
 
 			<!-- Begin Mailchimp Signup Form -->
-				<div id="mc_embed_signup">
-				<form action="https://sorcerist.us17.list-manage.com/subscribe/post?u=c716fed0934666845403d9210&amp;id=6dd28a7f51" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<div id="mc_embed_signup">
+				<form
+					action="https://sorcerist.us17.list-manage.com/subscribe/post?u=c716fed0934666845403d9210&amp;id=6dd28a7f51"
+					method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+					target="_blank" novalidate>
 					<div id="mc_embed_signup_scroll">
-					<label style="color:white;font-family: din-condensed, sans-serif;font-size:20px;"for="mce-EMAIL"><strong>SUBSCRIBE FOR EP DISCOUNT!</strong></label>
-					</br></br>
-					<input style="border-radius: 4px;   padding: 8px 16px;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="EMAIL ADDRESS" required>
-					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c716fed0934666845403d9210_6dd28a7f51" tabindex="-1" value=""></div>
-					<div class="clear"><input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						<label style="color:white;font-family: din-condensed, sans-serif;font-size:20px;"
+							for="mce-EMAIL"><strong>SUBSCRIBE FOR EP DISCOUNT!</strong></label>
+						</br></br>
+						<input style="border-radius: 4px;   padding: 8px 16px;" type="email" value="" name="EMAIL"
+							class="email" id="mce-EMAIL" placeholder="EMAIL ADDRESS" required>
+						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+								name="b_c716fed0934666845403d9210_6dd28a7f51" tabindex="-1" value=""></div>
+						<div class="clear"><input type="submit" value="SUBSCRIBE" name="subscribe"
+								id="mc-embedded-subscribe" class="button"></div>
 					</div>
 				</form>
-				</div>
-				
-				<!--End mc_embed_signup-->
+			</div>
 
-		  </div>
+			<!--End mc_embed_signup-->
+
+		</div>
 		</br>
-		  <span style="font-size:30px;cursor:pointer;color:white;padding-left:4%;" onclick="openNav()">&#9776;</span>
+		<span style="font-size:30px;cursor:pointer;color:white;padding-left:4%;" onclick="openNav()">&#9776;</span>
 	</div>
 
 	<script>
 		function openNav() {
-		  document.getElementById("mySidenav").style.width = "320px";
+			document.getElementById("mySidenav").style.width = "320px";
 		}
-		
+
 		function closeNav() {
-		  document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("mySidenav").style.width = "0";
 		}
-		</script>
+	</script>
 
 </body>
 
